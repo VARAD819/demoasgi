@@ -1,1 +1,1 @@
-web : daphne -u /tmp/daphne.sock casinobackend.asgi:application
+web: hypercorn casinobackend.asgi:application
