@@ -1,1 +1,1 @@
-web: hypercorn casinobackend.asgi:application
+web: python -m gunicorn casinobackend.asgi:application -k uvicorn.workers.UvicornWorker
