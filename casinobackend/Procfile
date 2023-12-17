@@ -1,1 +1,1 @@
-web : daphne -b demoasgi-production.up.railway.app casinobackend.asgi:application
+web : daphne -u /tmp/daphne.sock casinobackend.asgi:application
